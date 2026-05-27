@@ -50,33 +50,37 @@ psx.plot_fid_spe(prs_results, key_tg="CD68")
 
 **Python vs R (single core, PBMC3k dataset):**
 
-| Step | Python | R (ranger) |
-|------|--------|------------|
-| HGNN | 31s | 31s |
-| PRS | 33s | 219s |
-| **Total** | **80s** | **266s** |
-| **Speedup** | **3.33x** | - |
-| **Correlation** | **0.9912** | - |
+| Metric | Python | R (ranger) |
+|--------|--------|------------|
+| PRS Time | 33s | 219s |
+| **Speedup** | **6.64x** | - |
+| **Pearson Correlation** | **0.9912** | - |
 
-![Benchmark Correlation](example/figures/benchmark_correlation.png)
-![Benchmark Timing](example/figures/benchmark_timing.png)
+<p align="center">
+  <img src="example/figures/benchmark_correlation.png" width="45%" alt="Correlation">
+  <img src="example/figures/benchmark_timing.png" width="45%" alt="Timing">
+</p>
 
 ## Visualization Gallery
 
+**Crosstalk Analysis:**
+
 | Histogram | Bar Chart | Fid/Spe |
-|-----------|-----------|---------|
+|:---------:|:---------:|:-------:|
 | ![Histogram](example/figures/01_crosstalk_histogram.png) | ![Bar](example/figures/02_crosstalk_bar.png) | ![Fid/Spe](example/figures/03_fid_spe.png) |
 
 | Alluvial | Ridgeline | Chord |
-|----------|-----------|-------|
+|:--------:|:---------:|:-----:|
 | ![Alluvial](example/figures/04_alluvial.png) | ![Ridgeline](example/figures/05_ridgeline.png) | ![Chord](example/figures/06_chord.png) |
 
+**Network & Heatmaps:**
+
 | CCI Chord | CCI Circle | Signal Contribution |
-|-----------|------------|---------------------|
+|:---------:|:----------:|:-------------------:|
 | ![CCI Chord](example/figures/07_cci_chord.png) | ![CCI Circle](example/figures/08_cci_circle.png) | ![Signal](example/figures/09_signal_contribution.png) |
 
 | Rec-TG Heatmap | Circular Bar |
-|----------------|--------------|
+|:--------------:|:------------:|
 | ![Heatmap](example/figures/10_rec_tg_heatmap.png) | ![Circular](example/figures/11_circular_bar.png) |
 
 ## Examples
