@@ -48,17 +48,12 @@ psx.plot_fid_spe(prs_results, key_tg="CD68")
 
 ## Benchmark
 
-**Python vs R (single core, PBMC3k dataset):**
+**Python vs R Correlation (PBMC3k dataset):**
 
-| Metric | Python | R (ranger) |
-|--------|--------|------------|
-| PRS Time | 33s | 219s |
-| **Speedup** | **6.64x** | - |
-| **Pearson Correlation** | **0.9912** | - |
+- **Pearson Correlation: 0.9912**
 
 <p align="center">
-  <img src="example/figures/benchmark_correlation.png" width="45%" alt="Correlation">
-  <img src="example/figures/benchmark_timing.png" width="45%" alt="Timing">
+  <img src="example/figures/benchmark_correlation.png" width="60%" alt="Correlation">
 </p>
 
 ## Visualization Gallery
