@@ -1,13 +1,26 @@
+<p align="center">
+  <img src="data/logo.png" width="360px" alt="py-sigxtalk logo">
+</p>
+
+<div align="center">
+
+| | |
+|---:|:---|
+| **Package** | [![PyPI](https://img.shields.io/pypi/v/py-sigxtalk?color=blue)](https://pypi.org/project/py-sigxtalk/) ![Python Versions](https://img.shields.io/pypi/pyversions/py-sigxtalk) [![Downloads](https://static.pepy.tech/badge/py-sigxtalk)](https://pepy.tech/project/py-sigxtalk) |
+| **Meta** | [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Stars](https://img.shields.io/github/stars/omicverse/py-SigXTalk?style=social)](https://github.com/omicverse/py-SigXTalk) |
+
+</div>
+
+---
+
 # py-sigxtalk
 
-Python rewrite of SigXTalk: Dissecting crosstalk induced by cell-cell communication using single-cell transcriptomic data.
+Python rewrite of **SigXTalk**: Dissecting crosstalk induced by cell-cell communication using single-cell transcriptomic data.
 
 ## Installation
 
 ```bash
-# Install from source
-cd py-sigxtalk
-pip install -e ".[dev]"
+pip install py-sigxtalk
 ```
 
 ## Quick Start
@@ -45,39 +58,26 @@ psx.plot_fid_spe(prs_results, key_tg="CD68")
 | **Speedup** | **3.33x** | - |
 | **Correlation** | **0.9912** | - |
 
-**PRS Weight Correlation:**
-
 ![Benchmark Correlation](example/figures/benchmark_correlation.png)
-
-**Timing Comparison:**
-
 ![Benchmark Timing](example/figures/benchmark_timing.png)
 
 ## Visualization Gallery
 
-**Crosstalk Counts:**
+| Histogram | Bar Chart | Fid/Spe |
+|-----------|-----------|---------|
+| ![Histogram](example/figures/01_crosstalk_histogram.png) | ![Bar](example/figures/02_crosstalk_bar.png) | ![Fid/Spe](example/figures/03_fid_spe.png) |
 
-| Histogram | Bar Chart |
-|-----------|-----------|
-| ![Histogram](example/figures/01_crosstalk_histogram.png) | ![Bar](example/figures/02_crosstalk_bar.png) |
+| Alluvial | Ridgeline | Chord |
+|----------|-----------|-------|
+| ![Alluvial](example/figures/04_alluvial.png) | ![Ridgeline](example/figures/05_ridgeline.png) | ![Chord](example/figures/06_chord.png) |
 
-**Crosstalk Analysis:**
+| CCI Chord | CCI Circle | Signal Contribution |
+|-----------|------------|---------------------|
+| ![CCI Chord](example/figures/07_cci_chord.png) | ![CCI Circle](example/figures/08_cci_circle.png) | ![Signal](example/figures/09_signal_contribution.png) |
 
-| Fid/Spe | Alluvial | Ridgeline |
-|---------|----------|-----------|
-| ![Fid/Spe](example/figures/03_fid_spe.png) | ![Alluvial](example/figures/04_alluvial.png) | ![Ridgeline](example/figures/05_ridgeline.png) |
-
-**Network Diagrams:**
-
-| Chord | CCI Chord | CCI Circle |
-|-------|-----------|------------|
-| ![Chord](example/figures/06_chord.png) | ![CCI Chord](example/figures/07_cci_chord.png) | ![CCI Circle](example/figures/08_cci_circle.png) |
-
-**Heatmaps:**
-
-| Signal Contribution | Rec-TG Heatmap | Circular Bar |
-|---------------------|----------------|--------------|
-| ![Signal](example/figures/09_signal_contribution.png) | ![Heatmap](example/figures/10_rec_tg_heatmap.png) | ![Circular](example/figures/11_circular_bar.png) |
+| Rec-TG Heatmap | Circular Bar |
+|----------------|--------------|
+| ![Heatmap](example/figures/10_rec_tg_heatmap.png) | ![Circular](example/figures/11_circular_bar.png) |
 
 ## Examples
 
@@ -86,17 +86,8 @@ example/
 ├── quickstart.ipynb              # Full analysis workflow
 ├── benchmark.ipynb               # Python vs R comparison
 ├── data/                         # Input data & results
-│   ├── pbmc3k_final.h5ad         # PBMC3k dataset
-│   ├── prs_results.csv           # PRS results
-│   ├── prs_results_python.csv    # Python PRS results
-│   └── prs_results_r.csv         # R PRS results
 ├── figures/                      # Generated figures
-│   ├── 01-11_*.png               # 11 visualization figures
-│   └── benchmark_*.png           # Benchmark plots
 └── scripts/                      # Utility scripts
-    ├── run_benchmark.py          # Benchmark runner
-    ├── tutorial.py               # Tutorial script
-    └── compare_R_vs_Python.py    # R vs Python comparison
 ```
 
 ## Citation
