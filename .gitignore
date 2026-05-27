@@ -68,3 +68,4 @@ benchmark_*.csv
 
 # Logs
 *.log
+data/*.csv
