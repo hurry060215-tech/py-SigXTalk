@@ -52,13 +52,7 @@ example/data/*.csv
 example/data/*.h5
 example/data/*.h5s
 
-# Generated figures
-example/figures/*.png
-example/figures/*.pdf
-example/figures/*.svg
-
-# Benchmark outputs
-benchmark_*.png
+# Benchmark outputs (keep figures in repo)
 benchmark_*.csv
 
 # R outputs
