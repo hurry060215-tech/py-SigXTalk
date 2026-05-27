@@ -6,7 +6,7 @@
 
 | | |
 |---:|:---|
-| **Package** | [![PyPI](https://img.shields.io/pypi/v/py-sigxtalk?color=blue)](https://pypi.org/project/py-sigxtalk/) ![Python Versions](https://img.shields.io/pypi/pyversions/py-sigxtalk?color=blue) [![Downloads](https://static.pepy.tech/badge/py-sigxtalk)](https://pepy.tech/project/py-sigxtalk) |
+| **Package** | [![PyPI](https://img.shields.io/pypi/v/py-sigxtalk?color=blue)](https://pypi.org/project/py-sigxtalk/) [![Downloads](https://static.pepy.tech/badge/py-sigxtalk)](https://pepy.tech/project/py-sigxtalk) |
 | **Meta** | [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Stars](https://img.shields.io/github/stars/omicverse/py-SigXTalk?style=social)](https://github.com/omicverse/py-SigXTalk) |
 
 </div>
