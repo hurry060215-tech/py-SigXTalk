@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="data/logo.png" width="360px" alt="py-sigxtalk logo">
+  <img src="data/logo.png" width="360px" alt="py-SigXTalk logo">
 </p>
 
 <div align="center">
@@ -13,7 +13,7 @@
 
 ---
 
-# py-sigxtalk
+# py-SigXTalk
 
 Python rewrite of **SigXTalk**: Dissecting crosstalk induced by cell-cell communication using single-cell transcriptomic data.
 
